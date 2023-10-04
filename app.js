@@ -6,6 +6,15 @@ var logger = require('morgan');
 
 var app = express();
 
+app.get('/', (req, res) => {
+  res.send();
+});
+app.get('/about', (req, res) => {
+  res.send();
+});
+app.get('/users', (req, res) => {
+  res.send();
+});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');

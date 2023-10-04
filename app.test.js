@@ -15,6 +15,13 @@ test('GET /', done => {
     .end(done)
 });
 
+test('GET /users', done => {
+    request(app)
+    .get('/users')
+    .expect(200)
+    .end(done)
+});
+
 test('GET jibberish', done => {
     request(app)
     .get('/asjdgajdsg')
